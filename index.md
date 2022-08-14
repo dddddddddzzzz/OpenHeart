@@ -23,7 +23,7 @@ curl -d '🫠'  -X POST '<url>'
 
 It's a good idea to give visitors an easy way to send such requests; for example, with:
 
-- [`<open-heart>`](https://github.com/mochodikae/open-heart-elment)
+- [`<open-heart>`](https://github.com/mochokidae/open-heart-element)
 
 ## Count
 
