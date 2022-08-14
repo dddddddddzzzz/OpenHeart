@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Open Heart Protocol
 
 Open Heart Protocol lets an anonymous user sends an emoji reaction to a URL.
