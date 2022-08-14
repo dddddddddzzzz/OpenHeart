@@ -18,13 +18,13 @@ curl -d '🫠'  -X POST '<url>'
 
 ## UI
 
-You might also want to give people an easy way to send such requests; for example, with:
+It's a good idea to give visitors an easy way to send such requests; for example, with:
 
 - [`<open-heart>`](https://github.com/mochodikae/open-heart-elment)
 
-## Reactions
+## Count
 
-Optionally, a GET request to the same URL could resopnd with the emoji reaction counts.
+Optionally, a GET request to the same URL could respond with the emoji reaction counts.
 
 ## Real life implementations
 
@@ -42,7 +42,7 @@ The author of the endpoint decides.
 
 ### What if the someone repeatedly sends emoji to my server?
 
-It shows they may be quite enthusastic.
+It shows they may be quite enthusiastic.
 
 ### What if I don't want to receive some emoji?
 
