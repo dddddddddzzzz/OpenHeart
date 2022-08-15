@@ -6,6 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Heart Protocol</title>
   <link href="https://unpkg.com/muan.css@latest" rel="stylesheet" type="text/css">
+  <script src="https://unpkg.com/open-heart-element@latest" type="module"></script>
+  <style>
+    open-heart {
+      display: inline-block;
+      cursor: pointer;
+      padding: 0.4em 1em;
+      font-size: 14px;
+      background: var(--subtleBackgroundColor);
+      border: 1px solid var(--borderColor);
+      text-align: center;;
+      transition: transform .3s;
+      border-radius: 4px;
+      margin-right: 1em;
+      box-shadow: 1px 1px 0px #000;
+    }
+
+    open-heart:not([disabled]):hover,
+    open-heart:not([disabled]):focus {
+      transform: scale(1.1);
+    }
+
+    open-heart[aria-pressed="true"] { 
+      opacity: 0.8;
+      box-shadow: inset 2px 2px 4px var(--backgroundColor);
+    }
+
+    open-heart[aria-busy="true"] { animation: pulsate .3s infinite; }
+
+    @keyframes pulsate {
+      0% { transform: scale(1) }
+      100% { transform: scale(1.1) }
+    }
+
+    open-heart::after {
+      margin-left: 1em;
+      content: "(0)";
+    }
+
+    open-heart[count]::after {
+      content: "(" attr(count) ")";
+    }
+  </style>
+
+  <script defer>
+    for (const oh of document.querySelectorAll('open-heart')) {
+      oh.getCount()
+    }
+
+    document.addEventListener('open-heart', (event) => {
+      event.target.getCount()
+    })
+  </script>
 </head>
 <body>
   <main>

@@ -5,6 +5,10 @@ layout: default
 
 Open Heart Protocol lets an anonymous user sends an emoji reaction to a URL.
 
+<open-heart href="https://api.openheart.fyi" emoji="❤️">❤️</open-heart>
+<open-heart href="https://api.openheart.fyi" emoji="🫀">🫀</open-heart>
+<open-heart href="https://api.openheart.fyi" emoji="🥨">🥨</open-heart>
+
 ## How
 
 Set up an endpoint to receive an Open Heart POST request like this one:
