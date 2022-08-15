@@ -50,9 +50,11 @@
   </style>
 
   <script defer>
-    for (const oh of document.querySelectorAll('open-heart')) {
-      oh.getCount()
-    }
+    window.customElements.whenDefined('open-heart').then(() => {
+      for (const oh of document.querySelectorAll('open-heart')) {
+        oh.getCount()
+      }
+    })
 
     document.addEventListener('open-heart', (event) => {
       event.target.getCount()
