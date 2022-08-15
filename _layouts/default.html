@@ -8,6 +8,12 @@
   <link href="https://unpkg.com/muan.css@latest" rel="stylesheet" type="text/css">
   <script src="https://unpkg.com/open-heart-element@latest" type="module"></script>
   <style>
+    .reactions {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+
     open-heart {
       opacity: 0.1;
       display: inline-flex;
@@ -18,7 +24,6 @@
       border-radius: 10px;
       background: transparent;
       border: 1px solid var(--borderColor);
-      margin-right: 1em;
     }
 
     open-heart:defined {
@@ -45,11 +50,14 @@
 
     open-heart::after {
       margin-left: .5em;
+      transition: opacity .4s;
+      opacity: 0.5;
       content: "× 0";
       font-size: 13px;
     }
 
     open-heart[count]::after {
+      opacity: 1;
       content: "× " attr(count);
     }
   </style>
