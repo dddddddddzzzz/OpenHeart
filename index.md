@@ -5,9 +5,11 @@ layout: default
 
 Open Heart Protocol lets an anonymous user sends an emoji reaction to a URL.
 
+<div class="reactions">
 <open-heart href="https://api.openheart.fyi" emoji="❤️">❤️</open-heart>
 <open-heart href="https://api.openheart.fyi" emoji="🫀">🫀</open-heart>
 <open-heart href="https://api.openheart.fyi" emoji="🥨">🥨</open-heart>
+</div>
 
 ## How
 
