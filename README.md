@@ -1,15 +1,14 @@
 # Open Heart Protocol
 
-Open Heart Protocol lets an anonymous user sends an emoji reaction to a URL.
+The Open Heart Protocol lets an anonymous user sends an emoji reaction to a URL.
 
 ## How
 
-Set up an endpoint to receive an Open Heart POST request like this one:
+Set up an endpoint to receive an Open Heart `POST` request like this one:
 
 ```
 curl -d '🫠'  -X POST '<url>'
 ```
-
 
 ## Server code examples
 
@@ -24,7 +23,15 @@ It's a good idea to give visitors an easy way to send such requests; for example
 
 ## Count
 
-Optionally, a GET request to the same URL could respond with the emoji reaction counts.
+Optionally, a GET request to the same URL may respond with the emoji reaction counts.
+
+The response should be a JSON object mapping Emoji (as Strings) to their count (as Strings):
+
+```json
+{"❤️":"1","🫀":"2","❤️‍🔥":"3"}
+```
+
+If reaction counts are read-only, the server should respond with a 404.
 
 ## Real life implementations
 
