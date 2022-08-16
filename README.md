@@ -51,7 +51,7 @@ The response should be a JSON object mapping Emoji (as Strings) to their count (
 {"❤️": 14,"🫀": 12,"🥨": 22}
 ```
 
-If reaction counts are read-only, the server should respond with a [403](https://http.cat/403).
+If reaction counts are write-only, the server should respond with a [403](https://http.cat/403).
 
 ## Questions
 
