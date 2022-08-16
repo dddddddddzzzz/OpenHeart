@@ -37,7 +37,11 @@ Optionally, a GET request to the same URL could respond with the emoji reaction 
 
 ## Real life implementations
 
-- [https://muan.co](https://muan.co/pages/open-heart#like-prompt)
+- https://api.openheart.fyi (Allow listed emoji include ❤️, 🫀, and 🥨)
+
+  `curl -d '🥨' -X POST 'https://api.openheart.fyi'`
+
+  `curl 'https://api.openheart.fyi'`
 
 ## Questions
 
