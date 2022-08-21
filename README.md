@@ -35,7 +35,7 @@ This allows HTML `<form>`s to post reactions using the Open Heart protocol throu
 
 It's a good idea to give visitors an easy way to send such requests; for example, with:
 
-- [`<open-heart>`](https://github.com/mochokidae/open-heart-element)
+- [`<open-heart>`](https://github.com/dddddddddzzzz/open-heart-element)
 
 ## Count
 
