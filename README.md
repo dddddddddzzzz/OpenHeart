@@ -2,12 +2,6 @@
 
 The Open Heart protocol lets an anonymous user sends an emoji reaction to a URL.
 
-<div class="reactions">
-<open-heart href="https://api.openheart.fyi" emoji="❤️"></open-heart>
-<open-heart href="https://api.openheart.fyi" emoji="🫀"></open-heart>
-<open-heart href="https://api.openheart.fyi" emoji="🥨"></open-heart>
-</div>
-
 ## How
 
 Set up an endpoint to receive an Open Heart `POST` request like this one:
@@ -26,10 +20,16 @@ This allows HTML `<form>`s to post reactions using the Open Heart protocol throu
 </form>
 ```
 
-## Server code examples
+## Server code
+
+### Example
 
 - [With Cloudflare Worker & Cloudflare KV](https://gist.github.com/muan/388430d0ed03c55662e72bb98ff28f03)
 - [With Glitch and `fasify`](https://glitch.com/edit/#!/open-heart-server-demo)
+
+### Public API
+
+Alternatively, you can use [`api.oh`](https://api.oh.dddddddddzzzz.org) provided by us. See the [repository](https://github.com/dddddddddzzzz/api-oh) for more details.
 
 ## UI
 
