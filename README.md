@@ -29,7 +29,7 @@ This allows HTML `<form>`s to post reactions using the Open Heart protocol throu
 
 ### Public API
 
-Alternatively, you can use [`api.oh`](https://api.oh.dddddddddzzzz.org) provided by us. See the [repository](https://github.com/dddddddddzzzz/api-oh) for more details.
+Alternatively, you can use the public OpenHeart API provided by us. See the [repository](https://github.com/dddddddddzzzz/api-oh) for more details.
 
 ## UI
 
