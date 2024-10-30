@@ -14,30 +14,7 @@ A Open Heart message should contain of a single emoji sequence. However, the emo
 
 This allows HTML `<form>`s to post reactions using the Open Heart protocol through an empty input. In this case, the payload will be `🥨=`.
 
-```html
-<form action="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart" method="POST" enctype="text/plain">
-  <button name="🥨">🥨</button>
-</form>
-```
-
-## Server code
-
-To get started quickly, you can use our [public OpenHeart API](https://github.com/dddddddddzzzz/api-oh?tab=readme-ov-file#put-it-on-your-website-right-now), but we do recommend owning your own data whenever possible.
-
-Here are some code example get your own endpoint running quickly:
-
-- [With Cloudflare Worker & Cloudflare KV](https://gist.github.com/muan/388430d0ed03c55662e72bb98ff28f03)
-- [With Glitch and `fasify`](https://glitch.com/edit/#!/open-heart-server-demo)
-
-We welcome examples using other languages and services. Please send us a pull request!
-
-## UI
-
-It's a good idea to give visitors an easy way to send such requests; for example, with:
-
-- [`<open-heart>`](https://github.com/dddddddddzzzz/open-heart-element)
-
-## Count
+---
 
 Optionally, a `GET` request to the same URL may respond with the emoji reaction counts.
 
@@ -52,6 +29,28 @@ The response should be a JSON object mapping Emoji (as Strings) to their count (
 ```
 
 If reaction counts are write-only, the server should respond with a [403](https://http.cat/403) or a [404](https://http.cat/404).
+
+## Usage
+
+In its simplest form, you can put this on your website:
+```html
+<form action="<your server endpoint>" method="POST" enctype="text/plain">
+  <button name="🥨">🥨</button>
+</form>
+```
+
+However, we have also created [`<open-heart>`](https://github.com/dddddddddzzzz/open-heart-element) for a better user experience.
+
+## Server code
+
+To get started quickly, you can use our [public OpenHeart API](https://github.com/dddddddddzzzz/api-oh?tab=readme-ov-file#put-it-on-your-website-right-now), but we do recommend owning your own data whenever possible.
+
+Here are some code example get your own endpoint running quickly:
+
+- [With Cloudflare Worker & Cloudflare KV](https://gist.github.com/muan/388430d0ed03c55662e72bb98ff28f03)
+- [With Glitch and `fasify`](https://glitch.com/edit/#!/open-heart-server-demo)
+
+We welcome examples using other languages and services. Please send us a pull request!
 
 ## Questions
 
