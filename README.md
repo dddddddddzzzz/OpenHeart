@@ -64,7 +64,9 @@ The author of the endpoint decides.
 
 ### What if the someone repeatedly sends emoji to my server?
 
-It shows they may be quite enthusiastic.
+It shows they may be quite enthusiastic. 
+
+In all seriousness, our [public API](https://github.com/dddddddddzzzz/api-oh) is built with Cloudflare Worker with rate limiting and default DDoS protection.
 
 ### What if I don't want to receive some emoji?
 
