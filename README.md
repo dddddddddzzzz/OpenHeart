@@ -22,7 +22,7 @@ This allows HTML `<form>`s to post reactions using the Open Heart protocol throu
 
 ## Server code
 
-To get started quickly, you can use our [public OpenHeart API](https://github.com/dddddddddzzzz/api-oh), but we do recommend owning your own data whenever possible.
+To get started quickly, you can use our [public OpenHeart API](https://github.com/dddddddddzzzz/api-oh?tab=readme-ov-file#put-it-on-your-website-right-now), but we do recommend owning your own data whenever possible.
 
 Here are some code example get your own endpoint running quickly:
 
