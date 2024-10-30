@@ -7,7 +7,7 @@ The Open Heart protocol lets an anonymous user sends an emoji reaction to a URL.
 Set up an endpoint to receive an Open Heart `POST` request like this one:
 
 ```bash
-curl -d '🥨' -X POST 'https://api.openheart.fyi'
+curl -d '🥨' -X POST 'https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart'
 ```
 
 A Open Heart message should contain of a single emoji sequence. However, the emoji sequence may be followed by arbitrary data which the server is expected to ignore. 
@@ -15,21 +15,21 @@ A Open Heart message should contain of a single emoji sequence. However, the emo
 This allows HTML `<form>`s to post reactions using the Open Heart protocol through an empty input. In this case, the payload will be `🥨=`.
 
 ```html
-<form action="https://api.openheart.fyi" method="POST" enctype="text/plain">
+<form action="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart" method="POST" enctype="text/plain">
   <button name="🥨">🥨</button>
 </form>
 ```
 
 ## Server code
 
-### Example
+To get started quickly, you can use our [public OpenHeart API](https://github.com/dddddddddzzzz/api-oh), but we do recommend owning your own data whenever possible.
+
+Here are some code example get your own endpoint running quickly:
 
 - [With Cloudflare Worker & Cloudflare KV](https://gist.github.com/muan/388430d0ed03c55662e72bb98ff28f03)
 - [With Glitch and `fasify`](https://glitch.com/edit/#!/open-heart-server-demo)
 
-### Public API
-
-Alternatively, you can use the public OpenHeart API provided by us. See the [repository](https://github.com/dddddddddzzzz/api-oh) for more details.
+We welcome examples using other languages and services. Please send us a pull request!
 
 ## UI
 
@@ -42,7 +42,7 @@ It's a good idea to give visitors an easy way to send such requests; for example
 Optionally, a `GET` request to the same URL may respond with the emoji reaction counts.
 
 ```bash
-curl 'https://api.openheart.fyi'
+curl 'https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart'
 ```
 
 The response should be a JSON object mapping Emoji (as Strings) to their count (as Numbers):
