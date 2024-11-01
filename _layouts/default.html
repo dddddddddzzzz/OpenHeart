@@ -68,6 +68,10 @@
       opacity: 1;
       content: "× " attr(count);
     }
+
+    button:target::after {
+      content: ' (liked)'
+    }
   </style>
 
   <script defer>
@@ -84,6 +88,13 @@
 </head>
 <body>
   <main>
+    <form action="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart?redirect=https://openheart.fyi#like" method="POST" enctype="text/plain">
+      <button name="❤️" id="like">❤️ Like this page</button>
+    <form action="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart?redirect=https://openheart.fyi#heart" method="POST" enctype="text/plain">
+      <button name="🫀" id="heart">🫀 Heart this page</button>
+    </form>
+    <a href="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart">Check OpenHeart count for this page</a>
+
   {{ content}}
   </main>
 </body>
