@@ -76,6 +76,10 @@
     body {
       scroll-margin-block-start: 2em;
     }
+
+    form {
+      display: inline-block;
+    }
   </style>
 
   <script defer>
@@ -94,12 +98,14 @@
   <main>
     <form action="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart?redirect=https://openheart.fyi#like" method="POST" enctype="text/plain">
       <button name="❤️" id="like">❤️ Like this page</button>
+    </form>
     <form action="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart?redirect=https://openheart.fyi#heart" method="POST" enctype="text/plain">
       <button name="🫀" id="heart">🫀 Heart this page</button>
     </form>
     <form action="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart?redirect=https://openheart.fyi#pretzel" method="POST" enctype="text/plain">
       <button name="🥨" id="pretzel">🥨 Pretzel this page</button>
     </form>
+    <br>
     <a href="https://api.oh.dddddddddzzzz.org/github.com/dddddddddzzzz/OpenHeart">Check OpenHeart count for this page</a>
 
   {{ content}}
