@@ -49,6 +49,7 @@ Here are some code example get your own endpoint running quickly:
 
 - [With Cloudflare Worker & Cloudflare KV](https://gist.github.com/muan/388430d0ed03c55662e72bb98ff28f03)
 - [With Glitch and `fasify`](https://glitch.com/edit/#!/open-heart-server-demo)
+- [A plugin for the Kirby CMS](https://github.com/joachimesque/kirby-openheart)
 
 We welcome examples using other languages and services. Please send us a pull request!
 
